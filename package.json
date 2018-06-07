@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "key-cert",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "astur <astur@yandex.ru> (http://kozlov.am/)",
+  "scripts": {
+    "test": "eslint . && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astur/key-cert.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint": "^4.7.2",
+    "eslint-config-astur": "0.0.2"
+  },
+  "keywords": [
+    "key-cert"
+  ],
+  "license": "MIT"
+}
