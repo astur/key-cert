@@ -1,8 +1,7 @@
 {
-  "private": true,
   "name": "key-cert",
   "version": "0.0.0",
-  "description": "",
+  "description": "Zero-config generator of self-signed private key and certificate.",
   "main": "index.js",
   "author": "astur <astur@yandex.ru> (http://kozlov.am/)",
   "scripts": {
@@ -27,7 +26,20 @@
     "nyc": "^12.0.2"
   },
   "keywords": [
-    "key-cert"
+    "ssl",
+    "tls",
+    "https",
+    "pem",
+    "key",
+    "keys",
+    "cert",
+    "certificate",
+    "certificates",
+    "selfsigned",
+    "self-signed",
+    "development",
+    "options",
+    "server"
   ],
   "license": "MIT"
 }
