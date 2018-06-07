@@ -1,6 +1,6 @@
 # key-cert
 
-key-cert description here
+Zero-config generator of self-signed private key and certificate.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
@@ -13,8 +13,17 @@ npm i key-cert
 
 ## Usage
 
+Returns promise of a `{key, cert}` object ready to use in development and testing. That's all.
+
 ```js
-const key-cert = require('key-cert');
+const keyCert = require('key-cert');
+
+(async () => {
+    require('https').createServer(await keyCert(), (request, response) => {
+        response.end('ok');
+    }).listen(443);
+})()
+
 ```
 
 ## License
